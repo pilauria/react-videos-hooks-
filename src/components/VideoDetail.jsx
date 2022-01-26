@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const VideoDetail = ({ video }) => {
+const VideoDetail = ({ video }) => {
   if (!video) {
     return <div>Loading...</div>;
   }
@@ -19,3 +19,5 @@ export const VideoDetail = ({ video }) => {
     </div>
   );
 };
+
+export default VideoDetail;
