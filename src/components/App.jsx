@@ -21,7 +21,9 @@ const App = () => {
             <VideoDetail video={selectedVideo} />
           </div>
           <div className='five wide column'>
-            <VideoList onVideoSelect={setSelectedVideo} videos={videos} />
+            <VideoList onVideoSelect={setSelectedVideo} videos={videos} />{' '}
+            {/**/}
+            {/* */}
           </div>
         </div>
       </div>
@@ -30,3 +32,5 @@ const App = () => {
 };
 
 export default App;
+
+// {/* refactor/simplify from: onVideoSelect={(video)=> setSelectedVideo(video)} */}
